@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: iG:MU-Plugins Loader
+Plugin Name: bw-mu-plugins-loader
 Description: This is a plugin loader which scans all plugin folders in MU-PLUGINs directory and loads all plugin bootstrap files in those folders. For this to work, a plugin's bootstrap file should be named same as plugin folder name with a '.php' extension
 Version: 1.1
 Author: Amit Gupta
@@ -8,7 +8,7 @@ Author URI: http://igeek.info/
 License: GNU GPL 2
 */
 
-function ig_mu_plugins_loader() {
+function bw_mu_plugins_loader() {
 	if( ! defined( 'WPMU_PLUGIN_DIR' ) ) {
 		return;
 	}
@@ -53,7 +53,7 @@ function ig_mu_plugins_loader() {
 	}
 }
 
-ig_mu_plugins_loader();
+bw_mu_plugins_loader();
 
 
 //EOF
